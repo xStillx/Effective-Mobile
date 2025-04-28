@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main_navigation"
+    app:startDestination="@id/coursesFragment">
+
+    <fragment
+        android:id="@+id/coursesFragment"
+        android:name="com.arslan.myapplication.features.courses.presentation.CoursesFragment"
+        android:label="CoursesFragment"
+        tools:layout="@layout/fragment_courses"/>
+
+    <fragment
+        android:id="@+id/favoritesFragment"
+        android:name="com.arslan.myapplication.features.favorites.presentation.FavoritesFragment"
+        android:label="FavoritesFragment"
+        tools:layout="@layout/fragment_favorites"/>
+
+    <fragment
+        android:id="@+id/profileFragment"
+        android:name="com.arslan.myapplication.features.profile.presentation.ProfileFragment"
+        android:label="ProfileFragment"
+        tools:layout="@layout/fragment_profile"/>
+
+
+</navigation>

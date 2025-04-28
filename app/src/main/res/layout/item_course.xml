@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginHorizontal="@dimen/margin_l"
+    android:layout_marginVertical="@dimen/margin_s"
+    android:background="@drawable/item_course_background"
+    android:paddingBottom="@dimen/margin_l">
+
+
+    <androidx.cardview.widget.CardView
+        android:id="@+id/cv_image"
+        android:layout_width="match_parent"
+        android:layout_height="114dp"
+        app:cardCornerRadius="@dimen/margin_l"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <ImageView
+            android:id="@+id/iv_course_image"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            tools:ignore="ContentDescription"
+            android:src="@drawable/ic_course_image"
+            android:scaleType="centerCrop"/>
+
+    </androidx.cardview.widget.CardView>
+
+    <ImageButton
+        android:id="@+id/btn_favorite"
+        android:layout_width="28dp"
+        android:layout_height="28dp"
+        android:layout_marginTop="@dimen/margin_s"
+        android:layout_marginEnd="@dimen/margin_s"
+        android:background="@drawable/item_competence_background"
+        android:elevation="@dimen/margin_xxs"
+        android:scaleType="center"
+        android:src="@drawable/ic_not_favorite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:ignore="ContentDescription" />
+
+    <TextView
+        android:id="@+id/tv_stars"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_s"
+        android:layout_marginBottom="@dimen/margin_m"
+        android:background="@drawable/item_competence_background"
+        android:drawablePadding="@dimen/margin_xs"
+        android:elevation="@dimen/margin_xxs"
+        android:fontFamily="@font/roboto_regular"
+        android:paddingHorizontal="@dimen/margin_s"
+        android:paddingVertical="@dimen/margin_xs"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_xs"
+        app:drawableStartCompat="@drawable/ic_star"
+        app:layout_constraintBottom_toBottomOf="@id/cv_image"
+        app:layout_constraintStart_toStartOf="@id/cv_image"
+        tools:text="4.9" />
+
+    <TextView
+        android:id="@+id/tv_start_date"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="@dimen/margin_xs"
+        android:layout_marginBottom="@dimen/margin_m"
+        android:background="@drawable/item_competence_background"
+        android:drawablePadding="@dimen/margin_xs"
+        android:elevation="@dimen/margin_xxs"
+        android:fontFamily="@font/roboto_regular"
+        android:paddingHorizontal="@dimen/margin_s"
+        android:paddingVertical="@dimen/margin_xs"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_xs"
+        app:layout_constraintBottom_toBottomOf="@id/cv_image"
+        app:layout_constraintStart_toEndOf="@id/tv_stars"
+        tools:text="22 мая 2024" />
+
+
+    <TextView
+        android:id="@+id/tv_course_title"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_l"
+        android:layout_marginTop="@dimen/margin_l"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_m"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/cv_image"
+        tools:text="Java-разработчик с нуля" />
+
+    <TextView
+        android:id="@+id/tv_course_description"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_l"
+        android:layout_marginTop="@dimen/margin_m"
+        android:fontFamily="@font/roboto_regular"
+        android:maxLines="2"
+        android:textColor="@color/hint_color"
+        android:textSize="@dimen/text_size_xs"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_course_title"
+        tools:text="Освойте backend-разработку  и программирование на Java, фреймворки " />
+
+    <TextView
+        android:id="@+id/tv_course_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_l"
+        android:layout_marginTop="@dimen/margin_l"
+        android:fontFamily="@font/roboto_medium"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_m"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_course_description"
+        tools:text="999 ₽" />
+
+    <TextView
+        android:id="@+id/tv_course_details"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_l"
+        android:layout_marginTop="@dimen/margin_l"
+        android:drawablePadding="@dimen/margin_xs"
+        android:fontFamily="@font/roboto_semi_bold"
+        android:text="@string/more_details"
+        android:textColor="@color/green"
+        android:textSize="@dimen/text_size_m"
+        app:drawableEndCompat="@drawable/ic_arrow_right"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/tv_course_description" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

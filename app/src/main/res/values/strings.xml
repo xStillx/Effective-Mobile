@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Effective Mobile</string>
+    <string name="onboarding_title">Тысяча курсов\nв одном месте</string>
+    <string name="continue_text">Продолжить</string>
+    <string name="login">Вход</string>
+    <string name="email">Email</string>
+    <string name="example_gmail_com">example@gmail.com</string>
+    <string name="password">Пароль</string>
+    <string name="enter_password">Введите пароль</string>
+    <string name="no_account">Нету аккаунта?</string>
+    <string name="registration">Регистрация</string>
+    <string name="forgot_password">Забыл пароль</string>
+    <string name="fill_the_fields">Пожалуйста, заполните все поля</string>
+    <string name="enter_valid_email">Введите корректный Email</string>
+    <string name="main">Главная</string>
+    <string name="favorites">Избранное</string>
+    <string name="account">Аккаунт</string>
+    <string name="search_courses">Search courses...</string>
+    <string name="by_date_added">По дате добавления</string>
+    <string name="ruble">₽</string>
+    <string name="more_details">Подробнее</string>
+</resources>

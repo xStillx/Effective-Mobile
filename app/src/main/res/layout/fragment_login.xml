@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/login_screen"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/dark"
+    android:gravity="center"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_l"
+        android:fontFamily="@font/roboto_regular"
+        android:text="@string/login"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_xxxls" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_l"
+        android:layout_marginTop="@dimen/margin_lxs"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/email"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_m" />
+
+    <EditText
+        android:id="@+id/et_email"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_l"
+        android:layout_marginTop="@dimen/margin_s"
+        android:background="@drawable/edit_text_background"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="@string/example_gmail_com"
+        android:paddingHorizontal="@dimen/margin_l"
+        android:paddingVertical="@dimen/margin_m"
+        android:textColor="@color/white"
+        android:textColorHint="@color/hint_color" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_l"
+        android:layout_marginTop="@dimen/margin_l"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/password"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_m" />
+
+    <EditText
+        android:id="@+id/et_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_l"
+        android:layout_marginTop="@dimen/margin_s"
+        android:background="@drawable/edit_text_background"
+        android:fontFamily="@font/roboto_regular"
+        android:hint="@string/enter_password"
+        android:paddingHorizontal="@dimen/margin_l"
+        android:paddingVertical="@dimen/margin_m"
+        android:textColor="@color/white"
+        android:textColorHint="@color/hint_color" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btn_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_l"
+        android:layout_marginTop="@dimen/margin_xl"
+        android:background="@drawable/button_background"
+        android:fontFamily="@font/roboto_medium"
+        android:text="@string/login"
+        android:textAllCaps="false"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_s" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_l"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/roboto_semi_bold"
+            android:text="@string/no_account"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_xs" />
+
+        <TextView
+            android:id="@+id/tv_registration"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/margin_xs"
+            android:fontFamily="@font/roboto_semi_bold"
+            android:text="@string/registration"
+            android:textColor="@color/green"
+            android:textSize="@dimen/text_size_xs" />
+
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/tv_forgot_password"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="@dimen/margin_s"
+        android:fontFamily="@font/roboto_semi_bold"
+        android:text="@string/forgot_password"
+        android:textColor="@color/green"
+        android:textSize="@dimen/text_size_xs" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_marginHorizontal="@dimen/margin_l"
+        android:layout_marginTop="@dimen/margin_xxl"
+        android:background="@color/stroke" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="@dimen/margin_l"
+        android:layout_marginTop="@dimen/margin_xxl"
+        android:gravity="center"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btn_vk"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginEnd="@dimen/margin_s"
+            android:layout_weight="1"
+            android:background="@drawable/vk_button_background"
+            android:src="@drawable/ic_vk"
+            tools:ignore="ContentDescription" />
+
+        <ImageButton
+            android:id="@+id/btn_ok"
+            android:layout_width="0dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="@dimen/margin_s"
+            android:layout_weight="1"
+            android:background="@drawable/ok_button_background"
+            android:src="@drawable/ic_ok"
+            tools:ignore="ContentDescription" />
+
+    </LinearLayout>
+
+
+</LinearLayout>
